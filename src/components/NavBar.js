@@ -33,6 +33,8 @@ export const NavBar = () => {
 
   return (
     <Router>
+      <BrowserRouter basename={ process.env.PUBLIC_URL }>
+      </BrowserRouter>
       <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
         <Container>
           <Navbar.Brand href="/">
